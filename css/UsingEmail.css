@@ -53,38 +53,6 @@ a:-webkit-any-link
 	background-color:#f1f4f4;
 }
 /* ==========================================================================
-   Collums
-   ========================================================================== */
-.col-lg-12{
-	width:100%;
-}
-.col-md-12{
-	width:100%;
-}
-.col-sm-12{
-	width:100%;
-}
-.col-xs-12{
-	width:100%;
-}
-.col-lg-6{
-	width:50%;
-}
-.col-md-6{
-	width:50%;
-}
-.col-sm-6{
-	width:50%;
-}
-.col-xs-6{
-	width:50%;
-}
-@media (min-width:768px){
-	.container{
-		width:750px;
-	}
-}
-/* ==========================================================================
    Img
    ========================================================================== */
 .img-responsive{
@@ -355,22 +323,17 @@ a:-webkit-any-link
 /* ==========================================================================
    accordion
    ========================================================================== */
-   
-   .ui-accordion-header{
-	   display: block;
-	   cursor:pointer;
-	   background-color:#f8fafb;
-	   border:1px solid #e5e5e5;
-	   border-radius:1px;
-	-webkit-border-radius: 1px;
-	-moz-border-radius: 1px;
-	-webkit-border-radius: 1px;
-   }
-   .ui-accordion-header-icon {
-	   position:absolute;
-	    }
-   .ui-icon{
-   }
+	.panel-default>.panel-heading{
+		background-color:#f9fafc;
+		color:#009faf;
+		border-color:#e5e5e5;	
+	}
+	.panel-group .panel-heading{
+		border-bottom:0px;
+	}
+	.panel-default>.panel-heading+.panel-collapse>.panel-body {
+		background-color:#FFFFFF;
+	}
    .ui-icon-plus{
 	   font-family: 'FontAwesome';
 	   content: "\f107";
@@ -397,39 +360,3 @@ a:-webkit-any-link
 	   width:33px;
 	   text-align:center;   
    }
-   
-   
-   /*.panel-border {
-  background-color: #f5f5f5;
-  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.1);
-  border: 0;
-  padding: 10px;
-}
-.panel-border .panel-body {
-  background-color: #fff;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
-}
-.modal-content {
-  border-radius: 0px;
-}
-.modal-body.no-padding {
-  padding: 0;
-}
-.moda-title {
-  font-weight: 400;
-}
-.modal-open #sb-site {
-  position: static !important;
-  overflow: hidden !important;
-  width: auto !important;
-  height: auto !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-.modal-open {
-  position: static !important;
-  overflow: hidden !important;
-  width: auto !important;
-  height: auto !important;
-}
-*/
