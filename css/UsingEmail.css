@@ -28,7 +28,7 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: 3.0em;
 	line-height: 1em;
-	color: #444444;
+	color: #fff;
 }
 h2 {
 	font-weight:normal;
@@ -52,17 +52,6 @@ a:-webkit-any-link
 .bg-gray{
 	background-color:#f1f4f4;
 }
-/* ==========================================================================
-   Img
-   ========================================================================== */
-.img-responsive{
-	width:100%;
-	height:100%;
-	overflow:hidden;
-	margin:0px;
-	padding:0px;
-}
-
 
 /* ==========================================================================
    Fonts
@@ -89,6 +78,22 @@ a:-webkit-any-link
 }
 .pd-b-60 {
 	padding-bottom:60px;
+}
+/* ==========================================================================
+   Header img
+   ========================================================================== */
+.header-cover{
+	background-image:url(../images/Email-header.jpg);
+	background-size:cover;
+	color:#FFFFFF;
+	width:100%;
+	min-width:100%;
+	display:table;
+	padding:50px 10px 30px 10px;
+	background-position:top center;
+}
+.img-responsive{
+	margin: 0px auto;
 }
 /* ==========================================================================
    box post
@@ -140,6 +145,11 @@ a:-webkit-any-link
 .timeline {
   -webkit-transition: all 0.35s ease;
           transition: all 0.35s ease;
+  position: relative;
+}
+
+.timeline .btn-link {
+  z-index: 5;
   position: relative;
 }
 @media (min-width: 1201px) {
@@ -237,6 +247,12 @@ a:-webkit-any-link
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
   }
+  .margin-top-mobile-70{
+	  margin-top:70px;
+  }
+  .header-cover{
+	  height:200px;
+  }
 }
 @media (max-width: 767px) {
   .box-post {
@@ -248,16 +264,17 @@ a:-webkit-any-link
 	width:100%;
   }
   .box-post.left{
-	  margin:0px;
+	  margin:0px auto;
   }
   .box-post.right {
     margin: 0px auto;
   }
-}
-
-.timeline .btn-link {
-  z-index: 5;
-  position: relative;
+  .margin-top-mobile-70{
+	  margin-top:70px;
+  }
+  .header-cover{
+	  height:200px;
+  }
 }
 /* ==========================================================================
    Do and Don't box
@@ -406,11 +423,11 @@ a:-webkit-any-link
 	   color:#eeeeee;
 	   background-color: rgba(0, 0, 0, 0.3);
 	   transition:all .25s ease;
-	   padding:10px;
+	   padding:8px 15px;
 	   border-radius:5px;
 	   text-align:center;
    }
-   ..fa-chevron-up:before{
+   .fa-chevron-up:before{
 	   font-family: 'FontAwesome';
-	   content:"\f077";
+	   content:"\f106";
    }

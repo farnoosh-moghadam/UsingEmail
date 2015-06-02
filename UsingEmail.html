@@ -2,11 +2,36 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Using Email</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/UsingEmail.css" type="text/css" />
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	
+	var offset = 220,
+                duration = 500,
+                backToTop = $('#back-top');
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > offset) {
+                    backToTop.fadeIn(duration);
+                } else {
+                    backToTop.fadeOut(duration);
+                }
+            });
+	
+  $('#back-top').click(function() {
+  event.preventDefault();
+  $('html, body').animate({
+    scrollTop: 0
+  }, duration);
+  return false;
+});  
+});
+	
+</script>
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lte IE 7]>
@@ -18,31 +43,32 @@
 
 <body>
 <!-- Hero img -->
-<div > <img src="images/top.jpg" alt="" class="img-responsive"/> </div>
+<div class="header-cover"> 
+	<h1>Using Email effectively</h1>
+    <p>deug  g rei ger ier yer i reh ie h iu ghr ih eriuherifgfdiu ger uer gif gdfiufdg fidu gfih</p>
+</div>
 <!-- /Hero img --> 
 <!-- problem with email -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <img src="images/notebook.gif" alt="" class="img-responsive pd-l-r-30"/> </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pd-t-30">
+    <div class="col-md-6 col-md-push-6 col-sm-12 pd-t-30">
       <h2>The problem with email</h2>
       <p>Most people aren’t doing email correctly. There are a number of costly mistakes that both employees and job seekers are making when crafting an email; from failing to greet their recipient to writing inappropriate messages and putting their job on the line. An email is not a text message or Facebook comment thread; the process of composing an effective email requires more thought and consideration on the part of the sender than most other forms of online communication. An effective email is one with a clear purpose that makes it easy for recipients to respond.<br>
         <br>
         By employing certain trade tricks to your writing, your emails should become stronger means of communication, and you will become more adept at decoding incoming messages and have a better understanding of how your messages are interpreted by others.</p>
     </div>
+    <div class="col-md-6 col-md-pull-6 col-sm-12"> <img src="images/notebook.gif" alt="" class="img-responsive pd-l-r-30"/> </div>
   </div>
 </div>
 <!-- /problem with email --> 
 <!-- second row -->
-<div class="bg-gray">
+<div class="bg-gray pd-b-60">
   <div class="container">
-    <div class="row">
-      <div class="section-xlg wrapper">
-        <h2 class="lg-title">Latest News</h2>
-        <p class="lg-subtitle text-center">Read the latest news of our company.</p>
-        <div class="space-lg"></div>
-        <div class="md-overlay"></div>
-        <div class="timeline" id="newsFeed">
+    <div class="section-xlg wrapper">
+      <h2 class="lg-title">Latest News</h2>
+      <p class="lg-subtitle text-center">Read the latest news of our company.</p>
+      <div class="timeline">
+        <div class="row">
           <div class="box-feed">
             <div class="col-sm-6">
               <div class="box-post left"> <img class="img-responsive lazy" alt="..." src="images/a_465px.jpg">
@@ -107,7 +133,7 @@
         <br>
         Remember, each reason has a different aim and so your approach should be tailored to meet that aim. By being clear in your mind, you can start off on the right foot. You can create highly effective emails. If you are not sure about what you need, pick up the phone and make a call. Don’t make ambiguous requests.</p>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <img src="images/notebook-mail.jpg" alt="" class="img-responsive pd-l-r-30"/> </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center"> <img src="images/notebook-mail.jpg" alt="" class="img-responsive pd-l-r-30"/> </div>
   </div>
 </div>
 <!-- /third row --> 
@@ -115,123 +141,151 @@
 <div class="bg-gray">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-sm-push-6 col-xs-12">
+      <div class="col-md-6 col-md-push-6 col-sm-12 pd-t-30">
         <h2>The problem with email</h2>
         <p>Most people aren’t doing email correctly. There are a number of costly mistakes that both employees and job seekers are making when crafting an email; from failing to greet their recipient to writing inappropriate messages and putting their job on the line. An email is not a text message or Facebook comment thread; the process of composing an effective email requires more thought and consideration on the part of the sender than most other forms of online communication. An effective email is one with a clear purpose that makes it easy for recipients to respond.<br>
           <br>
           By employing certain trade tricks to your writing, your emails should become stronger means of communication, and you will become more adept at decoding incoming messages and have a better understanding of how your messages are interpreted by others.</p>
       </div>
-      <div class="col-sm-6 col-sm-pull-6 col-xs-12"> <img src="images/man_behind_notebook.jpg" alt="" class="img-responsive pd-l-r-30"/> </div>
+      <div class="col-md-6 col-md-pull-6 col-sm-12"> <img src="images/man_behind_notebook.jpg" alt="" class="img-responsive pd-l-r-30"/> </div>
     </div>
   </div>
 </div>
 <!-- /fourth row --> 
-<!-- test --> 
-<!--<div class="container">
-	<div class="row">
-    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 panel">
-                  <div class="panel-circle green">DO</div>
-                    <div class="panel-icon">
-                      <i class="fa-icon-time icon"></i>
-                    </div>
-                    <div class="panel-heading"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_do.png"></div>
-                    <div class="panel-body">
-                      <h3 class="panel-title">Project planning</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu pharetra felis.est.</p>
-                    </div>
-                  
-                  </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 panel">
-                  <div class="panel-circle red">DON'T</div>
-                    <div class="panel-icon">
-                      <i class="fa-icon-time icon"></i>
-                    </div>
-                    <div class="panel-heading"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_donot.png"></div>
-                    <div class="panel-body">
-                      <h3 class="panel-title">Project planning</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu pharetra felis.est.</p>
-                    </div>
-                  
-                  </div>
-            </div>
-    </div>
-</div>--> 
-<!-- /test --> 
-<!-- Correcting mistakes --> 
-
-<!-- /Correcting mistakes --> 
 <!-- test accordion -->
 <div class="container">
-  <div class="row">
-    <h2>Does and Don't of Communication</h2>
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading panel-heading-link">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed">
-                          1. Talent and creativity
-                        </a>
-                    </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body">
-              <p class="pd-b-60">The subject line is the first thing your recipient is going to see, so it’s arguably the most important part to consider when composing your email. Remember, the person you’re emailing is likely receiving hundreds of other emails that need to be dealt with. Yours is not the only one, so make it easy for them.</p>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-    	<div class="panel-box">
-                  <div class="panel-circle green">DO</div>
-                    <div class="panel-icon">
-                    </div>
-                    <div class="panel-heading-box"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_do1.png"></div>
-                    <div class="panel-body">
-                      <p><strong>DO</strong> Include a subject line that summarises the main idea of your email. Be descriptive if you need to, as this will also aid someone who is using the search function to find your email in the future.<br><br>
-                      <strong>DO</strong> give them a reason to open your email quickly.
-<br><br>
-<strong>DO</strong> say what you need to say immediately.<br><br>
-<strong>DO</strong> be specific – a subject line like “can you help me?” is too vague and it doesn’t address the content within the email; however “I need help with the table of contents” for example, is more specific and requires less time to figure out.
-</p>
-                    </div>
-                  </div>
-                  </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="row">
+  <h2>Does and Don't of Communication</h2>
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading panel-heading-link"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed"> 1. Talent and creativity </a> </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <p class="pd-b-60">The subject line is the first thing your recipient is going to see, so it’s arguably the most important part to consider when composing your email. Remember, the person you’re emailing is likely receiving hundreds of other emails that need to be dealt with. Yours is not the only one, so make it easy for them.</p>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="panel-box">
-                  <div class="panel-circle red">DON'T</div>
-                    <div class="panel-icon">
-                    </div>
-                    <div class="panel-heading-box"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_donot1.png"></div>
-                    <div class="panel-body">
-                      <p><strong>DO NOT</strong> leave the subject line blank – this shows laziness and lack of respect for the recipient.<br><br>
-<strong>DO NOT</strong> write “please read this” or “super urgent”. There are tagging systems available to denote importance. Ask your line manager if there is already a priority system in place.<br><br>
-<strong>DO NOT</strong> write “Hi”. Refrain from one wordsubject lines that say nothing about the message inside.
-<br><br>
-<strong>DO NOT</strong> write click bait headlines that may be mistaken for spam such as “Complimentary gift for you inside”.
-</p>
-                    </div>
-                  </div>
-                  </div>
+              <div class="panel-circle green">DO</div>
+              <div class="panel-icon"> </div>
+              <div class="panel-heading-box"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_do1.png"></div>
+              <div class="panel-body">
+                <p><strong>DO</strong> Include a subject line that summarises the main idea of your email. Be descriptive if you need to, as this will also aid someone who is using the search function to find your email in the future.<br>
+                  <br>
+                  <strong>DO</strong> give them a reason to open your email quickly. <br>
+                  <br>
+                  <strong>DO</strong> say what you need to say immediately.<br>
+                  <br>
+                  <strong>DO</strong> be specific – a subject line like “can you help me?” is too vague and it doesn’t address the content within the email; however “I need help with the table of contents” for example, is more specific and requires less time to figure out. </p>
+              </div>
+            </div>
           </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin-top-mobile-70">
+            <div class="panel-box">
+              <div class="panel-circle red">DON'T</div>
+              <div class="panel-icon"> </div>
+              <div class="panel-heading-box"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_donot1.png"></div>
+              <div class="panel-body">
+                <p><strong>DO NOT</strong> leave the subject line blank – this shows laziness and lack of respect for the recipient.<br>
+                  <br>
+                  <strong>DO NOT</strong> write “please read this” or “super urgent”. There are tagging systems available to denote importance. Ask your line manager if there is already a priority system in place.<br>
+                  <br>
+                  <strong>DO NOT</strong> write “Hi”. Refrain from one wordsubject lines that say nothing about the message inside. <br>
+                  <br>
+                  <strong>DO NOT</strong> write click bait headlines that may be mistaken for spam such as “Complimentary gift for you inside”. </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-          <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Collapsible Group Item #2 </a> </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-          <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+      <div class="panel-heading panel-heading-link" role="tab" id="headingTwo">
+        <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Collapsible Group Item #2 </a> </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          <p class="pd-b-60">The subject line is the first thing your recipient is going to see, so it’s arguably the most important part to consider when composing your email. Remember, the person you’re emailing is likely receiving hundreds of other emails that need to be dealt with. Yours is not the only one, so make it easy for them.</p>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="panel-box">
+              <div class="panel-circle green">DO</div>
+              <div class="panel-icon"> </div>
+              <div class="panel-heading-box"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_do1.png"></div>
+              <div class="panel-body">
+                <p><strong>DO</strong> Include a subject line that summarises the main idea of your email. Be descriptive if you need to, as this will also aid someone who is using the search function to find your email in the future.<br>
+                  <br>
+                  <strong>DO</strong> give them a reason to open your email quickly. <br>
+                  <br>
+                  <strong>DO</strong> say what you need to say immediately.<br>
+                  <br>
+                  <strong>DO</strong> be specific – a subject line like “can you help me?” is too vague and it doesn’t address the content within the email; however “I need help with the table of contents” for example, is more specific and requires less time to figure out. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin-top-mobile-70">
+            <div class="panel-box">
+              <div class="panel-circle red">DON'T</div>
+              <div class="panel-icon"> </div>
+              <div class="panel-heading-box"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_donot1.png"></div>
+              <div class="panel-body">
+                <p><strong>DO NOT</strong> leave the subject line blank – this shows laziness and lack of respect for the recipient.<br>
+                  <br>
+                  <strong>DO NOT</strong> write “please read this” or “super urgent”. There are tagging systems available to denote importance. Ask your line manager if there is already a priority system in place.<br>
+                  <br>
+                  <strong>DO NOT</strong> write “Hi”. Refrain from one wordsubject lines that say nothing about the message inside. <br>
+                  <br>
+                  <strong>DO NOT</strong> write click bait headlines that may be mistaken for spam such as “Complimentary gift for you inside”. </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-          <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Collapsible Group Item #3 </a> </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-          <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading panel-heading-link" role="tab" id="headingThree">
+        <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Collapsible Group Item #3 </a> </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          <p class="pd-b-60">The subject line is the first thing your recipient is going to see, so it’s arguably the most important part to consider when composing your email. Remember, the person you’re emailing is likely receiving hundreds of other emails that need to be dealt with. Yours is not the only one, so make it easy for them.</p>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="panel-box">
+              <div class="panel-circle green">DO</div>
+              <div class="panel-icon"> </div>
+              <div class="panel-heading-box"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_do1.png"></div>
+              <div class="panel-body">
+                <p><strong>DO</strong> Include a subject line that summarises the main idea of your email. Be descriptive if you need to, as this will also aid someone who is using the search function to find your email in the future.<br>
+                  <br>
+                  <strong>DO</strong> give them a reason to open your email quickly. <br>
+                  <br>
+                  <strong>DO</strong> say what you need to say immediately.<br>
+                  <br>
+                  <strong>DO</strong> be specific – a subject line like “can you help me?” is too vague and it doesn’t address the content within the email; however “I need help with the table of contents” for example, is more specific and requires less time to figure out. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin-top-mobile-70">
+            <div class="panel-box">
+              <div class="panel-circle red">DON'T</div>
+              <div class="panel-icon"> </div>
+              <div class="panel-heading-box"><img class="img-responsive" alt="Project planning" width="768" height="300" src="images/panel_bg_donot1.png"></div>
+              <div class="panel-body">
+                <p><strong>DO NOT</strong> leave the subject line blank – this shows laziness and lack of respect for the recipient.<br>
+                  <br>
+                  <strong>DO NOT</strong> write “please read this” or “super urgent”. There are tagging systems available to denote importance. Ask your line manager if there is already a priority system in place.<br>
+                  <br>
+                  <strong>DO NOT</strong> write “Hi”. Refrain from one wordsubject lines that say nothing about the message inside. <br>
+                  <br>
+                  <strong>DO NOT</strong> write click bait headlines that may be mistaken for spam such as “Complimentary gift for you inside”. </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
   </div>
 </div>
-<!-- /test accordion -->
+<!-- /test accordion --> 
 <!-- top arrow -->
-<div id="back-top" style="display: block;">
-    <a href="#header"><i class="fa fa-chevron-up"></i></a>
-</div>
+<div id="back-top" style="display: block;" class="hidden-xs"> <a href="#header"><i class="fa fa-chevron-up"></i></a> </div>
 <!-- /top arrow -->
 </body>
 </html>
