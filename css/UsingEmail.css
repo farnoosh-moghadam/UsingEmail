@@ -14,9 +14,9 @@
 html, body {
 	height: 100%;
 	min-height: 100%;
+	font-family: 'Open Sans', sans-serif;
 }
 body p {
-	font-family: 'Open Sans', sans-serif;
 	color: #808080;
 	font-size: 1em;
 	line-height: 1.8em;
@@ -27,10 +27,12 @@ h1, h2, h3, h4 {
 }
 h1 {
 	font-size: 3.0em;
-	line-height: 1em;
+	line-height: 1.3em;
+	font-weight:300;
 	color: #fff;
 }
 h2 {
+	margin:30px 0px 10px 0px;
 	font-weight:normal;
 	font-size: 2.0em;
 	line-height: 1.8em;
@@ -52,6 +54,20 @@ a:-webkit-any-link
 .bg-gray{
 	background-color:#f1f4f4;
 }
+.text-white{
+	color:#FFFFFF;
+}
+.text-pink{
+	color:#ee4299;
+}
+.header-cover h2{
+	margin: 20px 0px 10px 0px;
+	color:#ffffff;
+	font-weight:300;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+	
 
 /* ==========================================================================
    Fonts
@@ -72,6 +88,7 @@ a:-webkit-any-link
    ========================================================================== */
 .pd-t-30 {
 	padding-top:30px;
+	clear:both;
 }
 .pd-l-r-30 {
 	padding:0px 30px;
@@ -89,7 +106,8 @@ a:-webkit-any-link
 	width:100%;
 	min-width:100%;
 	display:table;
-	padding:50px 10px 30px 10px;
+	height:450px;
+	padding:50px 10px 30px 150px;
 	background-position:top center;
 }
 .img-responsive{
@@ -116,10 +134,10 @@ a:-webkit-any-link
     display: block;
   }
   .box-post.left {
-    margin: 30px 30px 0 0;
+    margin: 30px 30px 0px 0px;
   }
   .box-post.right {
-    margin: 80px 0 0 30px;
+    margin: 80px 0px 0px 30px;
   }
   .box-post.right:after {
     border-right: 15px solid #fff;
@@ -152,10 +170,29 @@ a:-webkit-any-link
   z-index: 5;
   position: relative;
 }
+.table{
+	width:100%;
+	background-color:#f9f9f9;
+	border-spacing:0px;
+	padding:0px;
+	border:0px;
+}
+.table tr{
+	border:1px solid #E9E9E9;
+}
+.table td{
+	width:50%;
+	padding: 20px 30px;  
+	color: #144a4e;
+	font-size:1.2em; 
+	background-color:#f3f3f3; 
+	border:1px solid #E9E9E9;
+	text-align:center;
+}
 @media (min-width: 1201px) {
 	.box-post.left:after {
     border-left: 15px solid #fff;
-    right: 45px;
+    right: 30px;
     top: 70px;
   }
   .timeline:after {
@@ -215,6 +252,10 @@ a:-webkit-any-link
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
   }
+    .header-cover{
+	  height:300px;
+	  padding-left: 20px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .box-post.left:after {
@@ -252,6 +293,7 @@ a:-webkit-any-link
   }
   .header-cover{
 	  height:200px;
+	  padding-left: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -274,6 +316,7 @@ a:-webkit-any-link
   }
   .header-cover{
 	  height:200px;
+	  padding-left: 10px;
   }
 }
 /* ==========================================================================
