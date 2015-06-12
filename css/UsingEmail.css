@@ -114,6 +114,20 @@ a:-webkit-any-link
 .img-responsive{
 	margin: 0px auto;
 }
+   /* ==========================================================================
+   Subscribe section
+   ========================================================================== */
+   .bg-filter{
+	background-image:url(../images/graphic.jpg);
+	background-size:cover;
+	color:#FFFFFF;
+	width:100%;
+	min-width:100%;
+	display:table;
+	height:480px;
+	padding:50px 10px 70px 150px;
+	background-position:top center; 
+   }
 /* ==========================================================================
    box post
    ========================================================================== */
@@ -253,7 +267,11 @@ text-align:center;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
   }
-    .header-cover{
+  .header-cover{
+ height:300px;
+ padding-left: 20px;
+  }
+  .bg.filter{
  height:300px;
  padding-left: 20px;
   }
