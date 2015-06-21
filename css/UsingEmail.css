@@ -135,8 +135,8 @@ a:-webkit-any-link
 	width:100%;
 	min-width:100%;
 	display:table;
-	height:480px;
-	padding:50px 10px 70px 150px;
+	height:80px;
+	padding:20px 10px 30px 10px;
 	background-position:top center; 
    }
    .subscribe-bg{
@@ -144,9 +144,21 @@ a:-webkit-any-link
 	   -webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:4px;
-	padding: 30px 10px;
+	display:table;
+	padding: 25px 12px;
 	margin:10px auto;
-	width:40%;
+	width:70%;
+   }
+   .subscribe-bg-white{
+	   background-color:#FFFFFF;
+	   border-radius:5px;
+	   display:table;
+	   padding:2px;
+   }
+   .subscribe-bg-white input{
+	   border:0px;
+	   padding:8px 20px;
+	   width:63%;
    }
    .btn{
 	   display: inline-block;
@@ -159,13 +171,14 @@ a:-webkit-any-link
 	   background-color:#05a0b3;
 	   border:1px solid #0797a9;
 	   color:#ffffff;
+	   float:right;
    }
    .btn a:hover{
 	   background-color:#389e5b;
 	   color:#ffffff;
    }
    /* ==========================================================================
-   Nombers
+   Numbers
    ========================================================================== */
    .bg-lightGreen{
 	   background-color:#ecf7eb;
@@ -177,6 +190,7 @@ a:-webkit-any-link
    }
    .bg-lightGreen h3{
 	   line-height:1.5em;
+	   padding-left:25px;
    }
    .bg-circle{
 	   border-radius:50%;
@@ -330,9 +344,9 @@ text-align:center;
  height:300px;
  padding-left: 20px;
   }
-  .bg.filter{
+  .bg-filter{
  height:300px;
- padding-left: 20px;
+ margin:0px auto;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -346,6 +360,10 @@ width:100%;
   }
   .box-post.left{
  margin:0px auto;
+	width:100%;
+  }
+  .box-post.left{
+	  margin:0px auto;
   }
   .box-post.right {
     margin: 0px auto;
@@ -357,6 +375,11 @@ width:100%;
  height:200px;
  padding-left: 10px;
   }
+  .bg-filter{
+ height:200px;
+ margin:0px auto;
+  }
+
 }
 @media (max-width: 767px) {
   .box-post {
@@ -379,6 +402,18 @@ width:100%;
   .header-cover{
  height:200px;
  padding-left: 10px;
+  }
+  .bg-filter{
+ height:200px;
+ padding: 20px 15px;
+  }
+  .bg-filter h1{
+	  font-size:2em;
+	  line-height:1.3em;
+	  padding-bottom:20px;
+  }
+  .subscribe-bg{
+	  width:85%;
   }
 }
 
