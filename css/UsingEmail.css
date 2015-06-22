@@ -16,7 +16,8 @@ html, body {
 	min-height: 100%;
 	font-family: 'Open Sans', sans-serif;
 }
-body p {
+body
+ p {
 	color: #808080;
 	font-size: 1em;
 	line-height: 1.8em;
@@ -41,7 +42,7 @@ h2 {
 }
 h3 {
 	font-weight: normal;
-	font-size: 1em;
+	font-size: 1.1em;
 }
 h4 {
 	font-weight: normal;
@@ -63,6 +64,9 @@ a:-webkit-any-link
 }
 .text-green{
 	color:#00852d;
+}
+.text-red{
+	color:#c6171f;
 }
 .header-cover h2{
 	margin: 20px 0px 10px 0px;
@@ -191,6 +195,7 @@ a:-webkit-any-link
    .bg-lightGreen h3{
 	   line-height:1.5em;
 	   padding-left:25px;
+	   color:#6d6f71;
    }
    .bg-circle{
 	   border-radius:50%;
@@ -240,10 +245,12 @@ a:-webkit-any-link
     top: 77.5px;
     right: -8.5px;
   }
-.box-post h3 {
-  font-size: 28px;
+.box-post h2 {
+  font-size: 1.5em;
+  line-height:1.5em;
   margin-top: 0;
   margin-bottom: 15px;
+  color:#494E51;
 }
 .box-post p {
   margin-bottom: 10px;
@@ -414,6 +421,10 @@ width:100%;
   }
   .subscribe-bg{
 	  width:85%;
+  }
+  .btn{
+	  width:35%;
+	  padding:5px;
   }
 }
 
